@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
 		t3 = MPI_Wtime() - t3;
 		MPI_Reduce(&t3, &tmp, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD); t3 = tmp;
 		
-		cout << "Кол-во узлов: " << sizeGroup << endl;
-		cout << "Размер матрицы: " << N << endl;
-		cout << "Невязка: " << t << endl;
-		cout << "Время прямого хода: " << t1 << endl;
-		cout << "Время обратного хода: " << t2 << endl;
-		cout << "Время вычисления невязки: " << t3 << endl << endl;
+		cout << "Number of MPI procs: " << sizeGroup << endl;
+		cout << "Matrix size: " << N << endl;
+		cout << "Residual: " << t << endl;
+		cout << "Time of forward pass: " << t1 << endl;
+		cout << "Time of backward pass: " << t2 << endl;
+		cout << "Time of residual calculations: " << t3 << endl << endl;
 		// printResults(res, rankInGroup);
 
 		freeMemmory(columns);
@@ -111,12 +111,12 @@ int main(int argc, char *argv[])
 	MPI_Reduce(&t3, &tmp, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD); t3 = tmp;
 
 	if (rankInGroup == 0) {
-		cout << "Кол-во узлов: " << sizeGroup << endl;
-		cout << "Размер матрицы: " << N << endl;
-		cout << "Невязка: " << t << endl;
-		cout << "Время прямого хода: " << t1 << endl;
-		cout << "Время обратного хода: " << t2 << endl;
-		cout << "Время вычисления невязки: " << t3 << endl << endl;
+		cout << "Number of MPI procs: " << sizeGroup << endl;
+		cout << "Matrix size: " << N << endl;
+		cout << "Residual: " << t << endl;
+		cout << "Time of forward pass: " << t1 << endl;
+		cout << "Time of backward pass: " << t2 << endl;
+		cout << "Time of residual calculations: " << t3 << endl << endl;
 	}
 	// printResults(res, rankInGroup);
 
