@@ -26,7 +26,7 @@ mpirun −np 4 ./res N
 ![Drag Racing](images/time.png)
 
 ### Speedup
-![Drag Racing](images/spe.png)
+![Drag Racing](images/spee.png)
 
 ### Efficiency
 ![Drag Racing](images/eff.png)
