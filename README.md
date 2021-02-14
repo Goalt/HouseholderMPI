@@ -24,7 +24,7 @@ mpirun −np 4 ./res N
 ## Results on BlueGeneP (CMC MSU)
 ### Time (seconds) on different matrix size (1024, 2048, 3072)
 <!-- ![](images/time.png =500x400) -->
-![test image size](images/time.png){:height="500px" width="400px"}
+<img src="images/time.png" width="500" height="400">
 
 ### Speedup
 <!-- ![](images/spee.png =500x400) -->
