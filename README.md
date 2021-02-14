@@ -23,10 +23,10 @@ mpirun −np 4 ./res N
 
 ## Results on BlueGeneP (CMC MSU)
 ### Time (seconds) on different matrix size (1024, 2048, 3072)
-![Drag Racing](images/time.png =500x400)
+![](images/time.png =500x400)
 
 ### Speedup
-![Drag Racing](images/spee.png  =500x400)
+![](images/spee.png  =500x400)
 
 ### Efficiency
-![Drag Racing](images/eff.png  =500x400)
+![](images/eff.png  =500x400)
